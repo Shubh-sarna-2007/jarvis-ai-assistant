@@ -13,6 +13,8 @@ import json
 from datetime import datetime
 recognizer = sr.Recognizer()
 newsapi = os.getenv("NEWS_API")
+
+load_dotenv()
 def morningBriefing():
 
     current_time = datetime.now().strftime("%I:%M %p")
@@ -289,4 +291,3 @@ if __name__ == "__main__":
         except Exception as e:
             print("Google Error ; {0}".format(e))
 
-load_dotenv()

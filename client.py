@@ -12,3 +12,4 @@ response = client.models.generate_content(
 )
 
 print(response.text)
+print(os.getenv("GEMINI_API"))
